@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Validation Form</title>
+</head>
+
+<body>
+    <div class="bg-wrap">
+        <img src="assets/rectangle-left.png" alt="background rectangle" class="bg-rectangle_left">
+        <div class="container">
+            <div class="header">
+                <p class="title">Create An Account</p>
+                <p class="subtitle">Create an account to enjoy all the services without any ads for free!</p>
+            </div>
+
+            <form class="form" id="form">
+                <div class="form-control">
+                    <input placeholder="Username" type="text" id="username" class="input">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <small>wrong username</small>
+                </div>
+
+                <div class="form-control">
+                    <input placeholder="Email" type="email" id="email" class="input">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <small>wrong email</small>
+                </div>
+
+                <div class="form-control">
+                    <input placeholder="Password" type="password" id="password" class="input">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <small>wrong password</small>
+                </div>
+
+                <div class="form-control">
+                    <input placeholder="Repeat password" type="password" id="password2" class="input">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <small>wrong password</small>
+                </div>
+
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+
+        </div>
+        <img src="assets/rectangle-right.png" alt="background rectangle" class="bg-rectangle_right">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

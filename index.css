@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
+
+:root {
+    --bg-color: #A7D7C5;
+    --btn-color: #84C7AE;
+    --title-color: #212B27;
+    --text-color: #32403B;
+    --form-bg-color: #F6FBF9;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-wrap {
+    background-color: var(--bg-color);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bg-rectangle_left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bg-rectangle_right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.container {
+    border-radius: 50px;
+    width: 700px;
+    height: 700px;
+    background: var(--form-bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--title-color);
+}
+
+.subtitle {
+    font-size: 22px;
+    text-align: center;
+    color: var(--text-color);
+    padding-left: 112px;
+    padding-right: 112px;
+}
+
+.form {
+    padding: 10px 40px;
+}
+
+.form-control {
+    margin-bottom: 30px;
+    margin-left: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+.input {
+    width: 500px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid rgb(213, 213, 213);
+    outline: none;
+    padding-left: 32px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.submit-btn {
+    padding: 24px 72px;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    background: var(--btn-color);
+    color: var(--form-bg-color);
+    font-size: 22px;
+    margin-left: 154px;
+    margin-right: 154px;
+}
+
+.submit-btn:hover {
+    color: #f6fbf9a1;
+    background: #84c7aeb9;
+    cursor: pointer;
+}
+
+i {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    visibility: hidden;
+}
+
+small {
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.success .input {
+    border-color: #2ecc71;
+}
+
+.form-control.error .input {
+    border-color: #e74c3c;
+}
+
+.form-control.success i.fa-circle-check {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error i.fa-circle-exclamation {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+
+    .bg-rectangle_left {
+        position: absolute;
+        left: -100px;
+        top: 0;
+    }
+
+    .bg-rectangle_right {
+        position: relative;
+        right: 100px;
+        bottom: 0;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .bg-rectangle_left {
+        visibility: hidden;
+    }
+
+    .bg-rectangle_right {
+        visibility: hidden;
+    }
+}
